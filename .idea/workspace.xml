@@ -20,8 +20,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react-crud-junio/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+            <state relative-caret-position="480">
+              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -146,6 +146,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="24f3d577-c51a-4025-bab1-efa53a16527b" name="Default" comment="" />
@@ -153,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528642709857</updated>
-      <workItem from="1528642711330" duration="1059000" />
+      <workItem from="1528642711330" duration="1437000" />
     </task>
     <task id="LOCAL-00001" summary="Add bootstrap">
       <created>1528643868844</created>
@@ -162,11 +165,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528643868844</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="We have created an unorderer list with list items and a heading to show that we can include bootstrap into a react app">
+      <created>1528644494668</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1528644494668</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1059000" />
+    <option name="totallyTimeSpent" value="1437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="680" height="768" extended-state="0" />
@@ -201,7 +211,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Add bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add bootstrap" />
+    <MESSAGE value="We have created an unorderer list with list items and a heading to show that we can include bootstrap into a react app" />
+    <option name="LAST_COMMIT_MESSAGE" value="We have created an unorderer list with list items and a heading to show that we can include bootstrap into a react app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -236,8 +247,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react-crud-junio/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        <state relative-caret-position="480">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
