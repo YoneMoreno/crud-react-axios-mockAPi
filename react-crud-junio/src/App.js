@@ -12,6 +12,7 @@ class App extends Component {
             newTodo: '',
             editing: false,
             editingIndex: null,
+            notification: null,
             todos: [
                 {
                     id: 1,
@@ -34,6 +35,7 @@ class App extends Component {
         this.editTodo = this.editTodo.bind(this);
         this.updateTodo = this.updateTodo.bind(this);
         this.generateTodoId = this.generateTodoId.bind(this);
+        this.alert = this.alert.bind(this);
     }
 
     handleChange(event) {
@@ -65,6 +67,20 @@ class App extends Component {
             todos,
             newTodo: ''
         });
+
+        this.alert('TODO Added OK!');
+    }
+
+    alert(notification) {
+        this.setState({
+            notification
+        });
+
+        setTimeout(() => {
+            this.setState({
+                notification: null
+            })
+        }, 2000)
     }
 
     deleteTodo(index) {
@@ -75,6 +91,8 @@ class App extends Component {
         this.setState({
             todos
         });
+
+        this.alert('Todo deleted OK!');
     }
 
     editTodo(index) {
@@ -102,6 +120,8 @@ class App extends Component {
             editingIndex: null,
             newTodo: ''
         });
+
+        this.alert('The TODO is updated!');
     }
 
     render() {
@@ -112,6 +132,14 @@ class App extends Component {
                     <h1 className="App-title">Welcome to React</h1>
                 </header>
                 <div className="container">
+
+                    {
+                        this.state.notification &&
+                        <div className="alert alert-success mt-3">
+                            <p className="text-center">{this.state.notification}</p>
+                        </div>
+                    }
+
 
                     <input
                         className='form-control my-3'
