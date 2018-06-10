@@ -13,21 +13,10 @@ class App extends Component {
             editing: false,
             editingIndex: null,
             notification: null,
-            todos: [
-                {
-                    id: 1,
-                    name: 'Play golf'
-                },
-                {
-                    id: 2,
-                    name: 'Cook'
-                },
-                {
-                    id: 3,
-                    name: 'Laugh'
-                }
-            ]
+            todos: []
         };
+
+        this.apiUrl = 'https://5b1d6826a1c56c001458c63a.mockapi.io';
 
         this.handleChange = this.handleChange.bind(this);
         this.addTodo = this.addTodo.bind(this);
@@ -151,8 +140,9 @@ class App extends Component {
 
 
                     <button
+                        disabled={this.state.newTodo.length < 5}
                         onClick={this.state.editing ? this.updateTodo : this.addTodo}
-                        className="btn-info form-control mb-3">
+                        className="btn-success form-control mb-3">
                         {this.state.editing ? 'Update todo' : 'Add todo'}
                     </button>
                     {!this.state.editing &&
