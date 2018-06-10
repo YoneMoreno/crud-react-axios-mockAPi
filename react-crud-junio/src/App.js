@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import ListItem from "./ListItem";
 import axios from 'axios';
+import loading from './spinner.gif';
 
 class App extends Component {
 
@@ -14,7 +15,8 @@ class App extends Component {
             editing: false,
             editingIndex: null,
             notification: null,
-            todos: []
+            todos: [],
+            loading: true
         };
 
         this.apiUrl = 'https://5b1d6826a1c56c001458c63a.mockapi.io';
@@ -30,9 +32,13 @@ class App extends Component {
     async componentDidMount() {
         const response = await axios.get(`${this.apiUrl}/todos`);
 
-        this.setState({
-            todos: response.data
-        });
+        setTimeout(() => {
+            this.setState({
+                todos: response.data,
+                loading: false
+            });
+
+        }, 1000);
 
     }
 
@@ -153,7 +159,15 @@ class App extends Component {
                         className="btn-success form-control mb-3">
                         {this.state.editing ? 'Update todo' : 'Add todo'}
                     </button>
-                    {!this.state.editing &&
+
+
+                    {
+                        this.state.loading &&
+                        <img src={loading} alt='loading'/>
+                    }
+
+
+                    {(!this.state.editing || this.state.loading) &&
                     <ul className="list-group">
                         {
                             this.state.todos.map((todo, index) =>
