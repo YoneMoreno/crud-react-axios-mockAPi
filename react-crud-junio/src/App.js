@@ -9,6 +9,7 @@ class App extends Component {
 
         this.state = {
             newTodo: '',
+            editing: false,
             todos: [
                 {
                     id: 1,
@@ -28,6 +29,7 @@ class App extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.addTodo = this.addTodo.bind(this);
         this.deleteTodo = this.deleteTodo.bind(this);
+        this.updateTodo = this.updateTodo.bind(this);
     }
 
     handleChange(event) {
@@ -62,6 +64,16 @@ class App extends Component {
         });
     }
 
+    updateTodo(index) {
+
+        const todo = this.state.todos[index];
+
+        this.setState({
+            editing: true,
+            newTodo: todo.name
+        });
+    }
+
     render() {
         return (
             <div className="App">
@@ -83,9 +95,9 @@ class App extends Component {
                     <button
                         onClick={this.addTodo}
                         className="btn-info form-control mb-3">
-                        Add todo
+                        {this.state.editing ? 'Update todo' : 'Add todo'}
                     </button>
-
+                    {!this.state.editing &&
                     <ul className="list-group">
                         {
                             this.state.todos.map((todo, index) =>
@@ -95,6 +107,14 @@ class App extends Component {
                                     className='list-group-item'
                                     key={todo.id}
                                 >
+
+                                    <button
+                                        onClick={() => this.updateTodo(index)}
+                                        className="btn-sm mr-3 btn-info"
+                                    >
+                                        U
+                                    </button>
+
                                     {todo.name}
                                     <button
                                         onClick={() => this.deleteTodo(index)}
@@ -106,6 +126,8 @@ class App extends Component {
                             )
                         }
                     </ul>
+                    }
+
                 </div>
             </div>
         );
