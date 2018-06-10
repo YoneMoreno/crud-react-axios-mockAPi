@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ListItem from "./ListItem";
+import axios from 'axios';
 
 class App extends Component {
 
@@ -26,6 +27,16 @@ class App extends Component {
         this.generateTodoId = this.generateTodoId.bind(this);
         this.alert = this.alert.bind(this);
     }
+
+    async componentDidMount() {
+        const response = await axios.get(`${this.apiUrl}/todos`);
+
+        this.setState({
+            todos: response.data
+        });
+
+    }
+
 
     handleChange(event) {
         this.setState(
