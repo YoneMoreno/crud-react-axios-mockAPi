@@ -36,9 +36,16 @@ class App extends Component {
                 <div className="container">
                     <h2 className="text-center p-4">TASKS list!</h2>
                     <ul className="list-group">
-                        <li className="list-group-item">1</li>
-                        <li className="list-group-item">2</li>
-                        <li className="list-group-item">3</li>
+                        {
+                            this.state.todos.map((todo) =>
+                                <li
+                                    className='list-group-item'
+                                    key={todo.id}
+                                >
+                                    {todo.name}
+                                </li>
+                            )
+                        }
                     </ul>
                 </div>
             </div>

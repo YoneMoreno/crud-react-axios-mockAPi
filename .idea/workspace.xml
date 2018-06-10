@@ -20,8 +20,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react-crud-junio/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="392">
+              <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -156,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528642709857</updated>
-      <workItem from="1528642711330" duration="1437000" />
+      <workItem from="1528642711330" duration="1611000" />
     </task>
     <task id="LOCAL-00001" summary="Add bootstrap">
       <created>1528643868844</created>
@@ -172,11 +172,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528644494668</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add app state with todos">
+      <created>1528644857935</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528644857935</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1437000" />
+    <option name="totallyTimeSpent" value="1611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="680" height="768" extended-state="0" />
@@ -212,7 +219,9 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Add bootstrap" />
     <MESSAGE value="We have created an unorderer list with list items and a heading to show that we can include bootstrap into a react app" />
-    <option name="LAST_COMMIT_MESSAGE" value="We have created an unorderer list with list items and a heading to show that we can include bootstrap into a react app" />
+    <MESSAGE value="Add app state with todos" />
+    <MESSAGE value="We show the todos list" />
+    <option name="LAST_COMMIT_MESSAGE" value="We show the todos list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -247,8 +256,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react-crud-junio/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="392">
+          <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
