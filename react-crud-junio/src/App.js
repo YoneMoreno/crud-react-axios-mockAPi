@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ListItem from "./ListItem";
 
 class App extends Component {
 
@@ -130,28 +131,12 @@ class App extends Component {
                     <ul className="list-group">
                         {
                             this.state.todos.map((todo, index) =>
-
-
-                                <li
-                                    className='list-group-item'
+                                <ListItem
                                     key={todo.id}
-                                >
-
-                                    <button
-                                        onClick={() => this.editTodo(index)}
-                                        className="btn-sm mr-3 btn-info"
-                                    >
-                                        U
-                                    </button>
-
-                                    {todo.name}
-                                    <button
-                                        onClick={() => this.deleteTodo(index)}
-                                        className="btn-sm ml-3 btn-danger"
-                                    >
-                                        X
-                                    </button>
-                                </li>
+                                    deleteTodo={() => this.deleteTodo(index)}
+                                    addTodo={() => this.addTodo(index)}
+                                    todo={todo}
+                                />
                             )
                         }
                     </ul>
