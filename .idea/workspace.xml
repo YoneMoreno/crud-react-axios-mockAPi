@@ -20,8 +20,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react-crud-junio/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+            <state relative-caret-position="536">
+              <caret line="61" column="11" lean-forward="true" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -156,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528642709857</updated>
-      <workItem from="1528642711330" duration="4156000" />
+      <workItem from="1528642711330" duration="4625000" />
     </task>
     <task id="LOCAL-00001" summary="Add bootstrap">
       <created>1528643868844</created>
@@ -193,11 +193,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528646698990</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="We can create a new todo ;=)">
+      <created>1528647807358</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1528647807358</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4156000" />
+    <option name="totallyTimeSpent" value="4625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="680" height="768" extended-state="0" />
@@ -236,7 +243,9 @@
     <MESSAGE value="Add app state with todos" />
     <MESSAGE value="We show the todos list" />
     <MESSAGE value="We have a two way binding because the state.newTodo is what the input value is and the input shows the state.newTodo content ;=)" />
-    <option name="LAST_COMMIT_MESSAGE" value="We have a two way binding because the state.newTodo is what the input value is and the input shows the state.newTodo content ;=)" />
+    <MESSAGE value="We can create a new todo ;=)" />
+    <MESSAGE value="Add delete button and function ;=)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add delete button and function ;=)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -271,8 +280,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react-crud-junio/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        <state relative-caret-position="536">
+          <caret line="61" column="11" lean-forward="true" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
