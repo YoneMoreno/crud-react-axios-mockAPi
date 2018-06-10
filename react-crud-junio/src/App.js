@@ -134,7 +134,7 @@ class App extends Component {
                                 <ListItem
                                     key={todo.id}
                                     deleteTodo={() => this.deleteTodo(index)}
-                                    addTodo={() => this.addTodo(index)}
+                                    editTodo={() => this.editTodo(index)}
                                     todo={todo}
                                 />
                             )
