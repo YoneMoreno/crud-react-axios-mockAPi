@@ -8,6 +8,7 @@ class App extends Component {
         super(props);
 
         this.state = {
+            newTodo: '',
             todos: [
                 {
                     id: 1,
@@ -23,6 +24,14 @@ class App extends Component {
                 }
             ]
         };
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState(
+            {
+                newTodo: event.target.value
+            });
     }
 
 
@@ -34,7 +43,15 @@ class App extends Component {
                     <h1 className="App-title">Welcome to React</h1>
                 </header>
                 <div className="container">
-                    <h2 className="text-center p-4">TASKS list!</h2>
+
+                    <input
+                        className='form-control my-3'
+                        type="text" name="addTodo" id="addTodo"
+                        placeholder='Add your new todo'
+                        onChange={this.handleChange}
+                        value={this.state.newTodo}
+                    />
+
                     <ul className="list-group">
                         {
                             this.state.todos.map((todo) =>
