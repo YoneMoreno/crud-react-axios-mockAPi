@@ -24,7 +24,9 @@ class App extends Component {
                 }
             ]
         };
+
         this.handleChange = this.handleChange.bind(this);
+        this.addTodo = this.addTodo.bind(this);
     }
 
     handleChange(event) {
@@ -32,6 +34,21 @@ class App extends Component {
             {
                 newTodo: event.target.value
             });
+    }
+
+    addTodo() {
+        const newTodo = {
+            name: this.state.newTodo,
+            id: this.state.todos[this.state.todos.length - 1].id + 1
+        };
+
+        const todos = this.state.todos;
+        todos.push(newTodo);
+
+        this.setState({
+            todos,
+            newTodo: ''
+        });
     }
 
 
@@ -51,6 +68,13 @@ class App extends Component {
                         onChange={this.handleChange}
                         value={this.state.newTodo}
                     />
+
+
+                    <button
+                        onClick={this.addTodo}
+                        className="btn-info form-control mb-3">
+                        Add todo
+                    </button>
 
                     <ul className="list-group">
                         {
