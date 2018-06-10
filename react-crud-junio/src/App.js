@@ -29,6 +29,7 @@ class App extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.addTodo = this.addTodo.bind(this);
         this.deleteTodo = this.deleteTodo.bind(this);
+        this.editTodo = this.editTodo.bind(this);
         this.updateTodo = this.updateTodo.bind(this);
     }
 
@@ -64,7 +65,7 @@ class App extends Component {
         });
     }
 
-    updateTodo(index) {
+    editTodo(index) {
 
         const todo = this.state.todos[index];
 
@@ -72,6 +73,10 @@ class App extends Component {
             editing: true,
             newTodo: todo.name
         });
+    }
+
+    updateTodo() {
+
     }
 
     render() {
@@ -93,7 +98,7 @@ class App extends Component {
 
 
                     <button
-                        onClick={this.addTodo}
+                        onClick={this.state.editing ? this.updateTodo : this.addTodo}
                         className="btn-info form-control mb-3">
                         {this.state.editing ? 'Update todo' : 'Add todo'}
                     </button>
@@ -109,7 +114,7 @@ class App extends Component {
                                 >
 
                                     <button
-                                        onClick={() => this.updateTodo(index)}
+                                        onClick={() => this.editTodo(index)}
                                         className="btn-sm mr-3 btn-info"
                                     >
                                         U
